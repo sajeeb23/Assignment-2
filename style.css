@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
 
+
+/* shared section  */
+
+.ts-paragraph{
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ts-small-title{
+    margin-top: 150px;
+    margin-bottom: 0px;
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+
 /* header section  */
 
 .header-section{
@@ -10,6 +30,7 @@
 }
 .header-list,  .header-follow-us{
     display: flex;
+    gap: 30px;
 }
 .header-title, .follow-us, .header-ul{
     display: flex;
@@ -44,12 +65,14 @@
     width: 30px;
 }
 
-.follow-us{
-    gap: 20px;
+.follow-us{ 
+    margin-top: 47px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 56px;
+    gap: 15px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
-    border: 0px;
-    padding: 5px 80px 10px 5px;
 }
 
 
@@ -70,20 +93,14 @@
     text-align: left;
 }
 .first-img{
-    width: 100%;
+    width: 620px;
+    height: 590px;
 }
 
 .ts-img{
     margin-right: 250px;
 }
-.ts-small-title{
-    margin-top: 150px;
-    margin-bottom: 0px;
-    color: #0B0223;
-    font-family: Work Sans;
-    font-size: 48px;
-    font-weight: 600;
-}
+
 
 .ts-title{
     color: #8758F1;
@@ -92,12 +109,7 @@
     font-weight: 800;
 }
 
-.ts-paragraph{
-    color: #534C64;
-    font-family: Work Sans;
-    font-size: 20px;
-    font-weight: 500;
-}
+
 .btn-div{
     margin-bottom: 50px; 
 
@@ -127,3 +139,96 @@
     padding: 15px 35px;
 }
 
+
+
+/* online games funny video section  */
+
+.online-games-header{
+    margin-bottom: 80px; 
+}
+
+.online-games{
+    text-align: center;
+}
+
+.funny-vdo{
+    color:  #F948B2;
+}
+
+.funny-vdo-img{
+    width: 18%;
+}
+
+.funny-vdo-img:hover{
+    border: 4px solid #F948B2;
+    border-radius: 25px;
+}
+.content{
+    position: absolute;
+
+}
+
+
+.online-games-img, .online-games-para{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    text-align: left;
+}
+
+.online-games-para{
+    gap: 100px;
+}
+
+
+
+/* third section  */
+
+.third-sec{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    gap: 250px;
+    padding-left: 250px;
+}
+
+.third-sec-img1{
+    width: 634px;
+    height: 650px;
+}
+
+.third-sec-img2{
+    position: relative;
+    right: 800px;
+    top: 75px;
+}
+
+
+
+
+
+
+
+
+
+/* for mobile devices */
+
+@media screen and (max-width: 576px) {
+    .header-section, .header-list,  .top-section, .header-ul{
+        flex-direction: column;
+    }
+    
+    .header-section{
+        align-items: center;
+    }
+    .top-section{
+        flex-direction: column-reverse;
+    }
+    .first-img{
+            width: 400px;
+            height: 360px;
+    }
+    
+}
